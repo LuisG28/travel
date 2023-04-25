@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge:[
+	'./src/**/*.html'
+  ],
   content: ["./src/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
 		backgroundImage: {
@@ -45,6 +49,6 @@ module.exports = {
 	extend: {
 
 	}
-  }
+  },
 }
 
